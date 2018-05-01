@@ -20,4 +20,11 @@ if( __name__ == '__main__'):
     print("Changed execution path to", newExecutionPath)
     
     from spaceinvaders import *
+
+    applicationMode = input("When you want to do machine learning enter 'm':")
+    if( applicationMode == "M" or applicationMode == "m"):
+        showBumpers = False
+        goalStayAlive = True
+        game.setMachineLearning( showBumpers, goalStayAlive )
+
     game.main()
